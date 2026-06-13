@@ -10,9 +10,9 @@ class Solution:
         prev = None
 
         while cur is not None:
-            next_node = cur.next
+            after = cur.next
             cur.next = prev
             prev = cur
-            cur = next_node
+            cur = after
         
         return prev
